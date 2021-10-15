@@ -11,7 +11,7 @@ const hotels_by_destination = {}; // maps destination_id to hotel_ids
 
 app.get('/search', (req, res) => {
     const { destination, hotels } = req.query;
-    // it is assumed that only one fitering parameter is used per request
+    // it is assumed that only one filtering parameter is used per request
     // when no parameters are selected, all hotels are fetched
     try {
         if (hotels) return res.send(searchByHotels({ hotel_ids: hotels, hotels_data }))
