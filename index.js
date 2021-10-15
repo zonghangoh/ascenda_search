@@ -16,7 +16,7 @@ app.get('/search', (req, res) => {
     try {
         if (hotels) return res.send(searchByHotels({ hotel_ids: hotels, hotels_data }))
         else if (destination) return res.send(searchByDestination({ destination_id: destination, hotels_by_destination, hotels_data }))
-        else res.send(searchByHotels({ hotel_ids: [], hotels_data }))
+        else return res.send(searchByHotels({ hotel_ids: [], hotels_data }))
     } catch (e) { console.log(e) };
 
     return res.sendStatus(400);
