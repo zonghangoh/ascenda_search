@@ -39,7 +39,7 @@ const parseAcmeData = ({ hotel, hotels_data }) => {
         hotels_data[hotel_id].description = hotel.Description;
     }
 
-    if (Array.isArray(hotel.Facilities === 'array') && hotel.Facilities.length > hotels_data[hotel_id].amenities.length) {
+    if (Array.isArray(hotel.Facilities) && hotel.Facilities.length > hotels_data[hotel_id].amenities.length) {
         hotels_data[hotel_id].amenities = hotel.Facilities;
     }
 
