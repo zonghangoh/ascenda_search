@@ -5,7 +5,6 @@ const { endpoints } = require('./constants');
 
 const express = require('express')
 const app = express()
-const port = 3000
 
 const hotels_data = {}; // maps hotel_id to hotel data
 const hotels_by_destination = {}; // maps destination_id to hotel_ids
@@ -30,7 +29,7 @@ const initData = async () => {
     populateHotelsByDestination({ hotels_by_destination, hotels_data });
 }
 
-app.listen(port, () => {
-    console.log(`Listening at http://localhost:${port}`)
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`Please hire me`)
     initData();
 })
