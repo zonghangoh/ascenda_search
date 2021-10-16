@@ -45,8 +45,8 @@ const parsePatagoniaData = ({ hotel, hotels_data }) => {
                     })]
         }
         if (Array.isArray(hotel.images['amenities'])) {
-            hotels_data[hotel_id].images.amenities = [
-                ...hotels_data[hotel_id].images.amenities,
+            hotels_data[hotel_id].images.site = [
+                ...hotels_data[hotel_id].images.site,
                 ...hotel.images['amenities']
                     .filter((image) => !hotels_data[hotel_id].images.amenities.find((i) => i.url === image.url))
                     .map((image) => {

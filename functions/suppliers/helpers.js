@@ -13,7 +13,7 @@ const generateHotelTemplate = (id) => {
         },
         "description": '',
         "amenities": [],
-        "images": { 'rooms': [], 'amenities': [], 'site': [] }, // {url, caption}
+        "images": { 'rooms': [], 'site': [] }, // {url, caption}
         "booking_conditions": []
     }
 }
