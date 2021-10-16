@@ -15,17 +15,17 @@ hotels[]: *String* OR destination: *String*
 
 		{
 			"id": String,
-			"destination_id":  int,
-			"name":  String,
+			"destination_id": int,
+			"name": String,
 			"location": {
-				"lat":  double,
-				"lng":  double,
-				"address":  String,
-				"city":  String,
-				"country":  String,
-				"postal_code":  String
+				"lat": double,
+				"lng": double,
+				"address": String,
+				"city": String,
+				"country": String,
+				"postal_code": String
 			},
-			"description":  String,
+			"description": String,
 			"amenities": [String],
 			"images": { 	
 				'rooms': [{url: String, caption: String}],  	
