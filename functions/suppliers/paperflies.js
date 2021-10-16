@@ -53,7 +53,7 @@ const parsePaperfliesData = ({ hotel, hotels_data }) => {
             hotels_data[hotel_id].images.site = [
                 ...hotels_data[hotel_id].images.site,
                 ...hotel.images['site']
-                    .filter((image) => !hotels_data[hotel_id].images.amenities.find((i) => i.url === image.link))
+                    .filter((image) => !hotels_data[hotel_id].images.site.find((i) => i.url === image.link))
                     .map((image) => {
                         return {
                             url: image.link,
