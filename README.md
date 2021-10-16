@@ -29,7 +29,6 @@ hotels[]: *String* OR destination: *String*
 			"amenities": [String],
 			"images": { 	
 				'rooms': [{url: String, caption: String}],  	
-				'amenities': [{url: String, caption: String}],
 				'site': [{url: String, caption: String}] 
 			},  
 			"booking_conditions": [String]
