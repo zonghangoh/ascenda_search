@@ -44,7 +44,7 @@ hotels[]: *String* OR destination: *String*
 2. Data Search
 	
 	It is assumed that only one filtering parameter is used per request.
-	When no parameters are selected, all hotels are fetched.
+	When no parameter is selected, all hotels are fetched.
 
 	Data search is done via simple key value pair look ups using the global variables *hotels_data* and *hotels_by_destination*.
 		
